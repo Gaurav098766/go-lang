@@ -27,6 +27,7 @@ func newDeck() deck {
 }
 
 // 2.) func print(): purpose: loop through deck of cards and print all the name if cards
+// whenever we add (d deck) before a func name that signifies reciever so that we can call a method of print on it. Eg: d.print()
 func (d deck) print() {
 	for i, cards := range d {
 		fmt.Println(i, cards)
